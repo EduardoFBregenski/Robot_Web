@@ -1,0 +1,66 @@
+{"level":30,"time":"2024-04-28T15:28:35.891Z","pid":4636,"hostname":"LeVelho","msg":"Listening on 58154"}
+(node:4636) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-04-28T15:28:36.362Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method initializeExtension"}
+{"level":30,"time":"2024-04-28T15:28:36.363Z","pid":4636,"hostname":"LeVelho","msg":"Initializing extension: C:\\QAx\\projects\\parodify-robot\\resources\\module.js"}
+{"level":30,"time":"2024-04-28T15:28:36.367Z","pid":4636,"hostname":"LeVelho","msg":"End of node method initializeExtension"}
+{"level":30,"time":"2024-04-28T15:28:36.364Z","pid":4636,"hostname":"LeVelho","msg":"Adding 1 keywords from JS Extension"}
+{"level":30,"time":"2024-04-28T15:28:36.439Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:36.440Z","pid":4636,"hostname":"LeVelho","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:36.445Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:36.445Z","pid":4636,"hostname":"LeVelho","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:36.455Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-04-28T15:28:36.894Z","pid":4636,"hostname":"LeVelho","msg":"Adding browser to stack: chromium, version: 123.0.6312.4"}
+{"level":30,"time":"2024-04-28T15:28:36.896Z","pid":4636,"hostname":"LeVelho","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-04-28T15:28:36.895Z","pid":4636,"hostname":"LeVelho","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-04-28T15:28:36.905Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-04-28T15:28:36.905Z","pid":4636,"hostname":"LeVelho","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-04-28T15:28:36.934Z","pid":4636,"hostname":"LeVelho","msg":"Changed active context"}
+{"level":30,"time":"2024-04-28T15:28:37.339Z","pid":4636,"hostname":"LeVelho","msg":"Video path: undefined"}
+{"level":30,"time":"2024-04-28T15:28:37.340Z","pid":4636,"hostname":"LeVelho","msg":"Changed active page"}
+{"level":30,"time":"2024-04-28T15:28:37.378Z","pid":4636,"hostname":"LeVelho","msg":"End of node method newPage"}
+{"level":30,"time":"2024-04-28T15:28:37.404Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-04-28T15:28:38.019Z","pid":4636,"hostname":"LeVelho","msg":"End of node method goTo"}
+{"level":30,"time":"2024-04-28T15:28:38.027Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method getText"}
+{"level":30,"time":"2024-04-28T15:28:38.028Z","pid":4636,"hostname":"LeVelho","msg":"Strict mode is enabled, find Locator with css=.logged-user in page."}
+{"level":30,"time":"2024-04-28T15:28:38.128Z","pid":4636,"hostname":"LeVelho","msg":"Retrieved text for element css=.logged-user containing Fernando Papito"}
+{"level":30,"time":"2024-04-28T15:28:38.128Z","pid":4636,"hostname":"LeVelho","msg":"End of node method getText"}
+{"level":30,"time":"2024-04-28T15:28:38.142Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method click"}
+{"level":30,"time":"2024-04-28T15:28:38.143Z","pid":4636,"hostname":"LeVelho","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, \"song\")]//h6[text()=\"Smells Like Test Script\"]/..//button[contains(@class, \"play\")] in page."}
+{"level":30,"time":"2024-04-28T15:28:38.228Z","pid":4636,"hostname":"LeVelho","msg":"End of node method click"}
+{"level":30,"time":"2024-04-28T15:28:38.237Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-04-28T15:28:38.237Z","pid":4636,"hostname":"LeVelho","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, \"song\")]//h6[text()=\"Smells Like Test Script\"]/..//button[contains(@class, \"pause\")] in page."}
+{"level":30,"time":"2024-04-28T15:28:38.455Z","pid":4636,"hostname":"LeVelho","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-04-28T15:28:38.463Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-04-28T15:28:38.463Z","pid":4636,"hostname":"LeVelho","msg":"Strict mode is enabled, find Locator with xpath=//div[contains(@class, \"song\")]//h6[text()=\"Smells Like Test Script\"]/..//button[contains(@class, \"play\")] in page."}
+{"level":30,"time":"2024-04-28T15:28:43.429Z","pid":4636,"hostname":"LeVelho","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-04-28T15:28:43.440Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-04-28T15:28:43.441Z","pid":4636,"hostname":"LeVelho","Take screenshot with options: ":{"path":"C:\\QAx\\projects\\parodify-robot\\logs\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-04-28T15:28:43.823Z","pid":4636,"hostname":"LeVelho","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-04-28T15:28:43.833Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:43.837Z","pid":4636,"hostname":"LeVelho","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:43.841Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:43.844Z","pid":4636,"hostname":"LeVelho","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:43.849Z","pid":4636,"hostname":"LeVelho","msg":"Changed active context"}
+{"level":30,"time":"2024-04-28T15:28:43.850Z","pid":4636,"hostname":"LeVelho","msg":"Changing current active page: page=1bf70b6f-8a23-4bb9-b151-bbf2dea48dd3"}
+{"level":30,"time":"2024-04-28T15:28:43.850Z","pid":4636,"hostname":"LeVelho","msg":"Changed active page"}
+{"level":30,"time":"2024-04-28T15:28:43.856Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:43.858Z","pid":4636,"hostname":"LeVelho","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:43.862Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-04-28T15:28:43.864Z","pid":4636,"hostname":"LeVelho","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-04-28T15:28:43.869Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-04-28T15:28:43.870Z","pid":4636,"hostname":"LeVelho","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-04-28T15:28:43.874Z","pid":4636,"hostname":"LeVelho","msg":"Changing current active page: page=1bf70b6f-8a23-4bb9-b151-bbf2dea48dd3"}
+{"level":30,"time":"2024-04-28T15:28:43.874Z","pid":4636,"hostname":"LeVelho","msg":"Changed active page"}
+{"level":30,"time":"2024-04-28T15:28:43.885Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:43.890Z","pid":4636,"hostname":"LeVelho","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:43.895Z","pid":4636,"hostname":"LeVelho","msg":"Changed active context"}
+{"level":30,"time":"2024-04-28T15:28:43.895Z","pid":4636,"hostname":"LeVelho","msg":"Changing current active page: page=1bf70b6f-8a23-4bb9-b151-bbf2dea48dd3"}
+{"level":30,"time":"2024-04-28T15:28:43.895Z","pid":4636,"hostname":"LeVelho","msg":"Changed active page"}
+{"level":30,"time":"2024-04-28T15:28:43.902Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-04-28T15:28:43.930Z","pid":4636,"hostname":"LeVelho","msg":"Removed page=c4a9c515-136b-4150-98f1-e5bc1a7d61ee from context=b84cfcc1-1e9e-41b9-99eb-e549376a0359 page stack"}
+{"level":30,"time":"2024-04-28T15:28:43.990Z","pid":4636,"hostname":"LeVelho","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-04-28T15:28:44.014Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:44.014Z","pid":4636,"hostname":"LeVelho","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-04-28T15:28:44.104Z","pid":4636,"hostname":"LeVelho","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-04-28T15:28:44.350Z","pid":4636,"hostname":"LeVelho","msg":"End of node method closeAllBrowsers"}

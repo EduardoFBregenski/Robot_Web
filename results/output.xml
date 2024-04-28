@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-28T11:51:45.564646" rpa="false" schemaversion="5">
+<suite id="s1" name="Parodify-Robot" source="C:\QAx\projects\parodify-robot">
+<suite id="s1-s1" name="Player" source="C:\QAx\projects\parodify-robot\player.robot">
+<test id="s1-s1-t1" name="Deve tocar uma musica" line="5">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-04-28T11:51:47.013338" level="INFO">{"browser": "firefox", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAx\\projects\\parodify-robot\\results\\browser\\traces\\68fce0c9-4b05-4c97-91b2-27e1b9bc61ba"}</msg>
+<msg time="2024-04-28T11:51:47.787028" level="INFO">Successfully created browser with options: {"browser":"firefox","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAx\\projects\\parodify-robot\\results\\browser\\traces\\68fce0c9-4b05-4c97-91b2-27e1b9bc61ba"}</msg>
+<arg>browser=firefox</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-04-28T11:51:47.011337" elapsed="0.775691"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-04-28T11:51:50.444252" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2024-04-28T11:51:50.444252" level="INFO">See also file:///C:/QAx/projects/parodify-robot/results/playwright-log.txt for additional details.</msg>
+<msg time="2024-04-28T11:51:50.445253" level="FAIL">Error: page.goto: NS_ERROR_MALFORMED_URI
+Call log:
+  [2m- navigating to "about:black", waiting until "load"[22m
+</msg>
+<arg>about:black</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2024-04-28T11:51:47.787028" elapsed="2.668722">Error: page.goto: NS_ERROR_MALFORMED_URI
+Call log:
+  [2m- navigating to "about:black", waiting until "load"[22m
+</status>
+</kw>
+<kw name="Mock My Song" owner="Browser">
+<doc>TODO: Add rfdoc string to exposed function to create documentation</doc>
+<status status="NOT RUN" start="2024-04-28T11:51:50.456752" elapsed="0.000000"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<arg>https://parodify.vercel.app/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="NOT RUN" start="2024-04-28T11:51:50.457751" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<arg>css=.logged-user</arg>
+<arg>contains</arg>
+<arg>Fernando Papito</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-04-28T11:51:50.458750" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${play}</var>
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="Smells Like Test Script"]/..//button[contains(@class, "play")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-04-28T11:51:50.459751" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${pause}</var>
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="Smells Like Test Script"]/..//button[contains(@class, "pause")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-04-28T11:51:50.459751" elapsed="0.001000"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${play}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2024-04-28T11:51:50.460751" elapsed="0.001001"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>${pause}</arg>
+<arg>visible</arg>
+<arg>2</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2024-04-28T11:51:50.461752" elapsed="0.000000"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>${play}</arg>
+<arg>visible</arg>
+<arg>7</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2024-04-28T11:51:50.462751" elapsed="0.001002"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-04-28T11:51:50.463753" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-28T11:51:47.003357" elapsed="3.461394">Error: page.goto: NS_ERROR_MALFORMED_URI
+Call log:
+  [2m- navigating to "about:black", waiting until "load"[22m
+</status>
+</test>
+<status status="FAIL" start="2024-04-28T11:51:45.601384" elapsed="4.943548"/>
+</suite>
+<status status="FAIL" start="2024-04-28T11:51:45.573891" elapsed="4.984745"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Parodify-Robot">Parodify-Robot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Player">Parodify-Robot.Player</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

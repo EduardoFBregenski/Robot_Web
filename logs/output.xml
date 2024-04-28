@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-04-28T12:28:34.137673" rpa="false" schemaversion="5">
+<suite id="s1" name="Player" source="C:\QAx\projects\parodify-robot\player.robot">
+<test id="s1-t1" name="Deve tocar uma musica" line="8">
+<kw name="Start session" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-04-28T12:28:36.451397" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\QAx\\projects\\parodify-robot\\logs\\browser\\traces\\20601b08-d134-4c34-99cc-d281ff30d822"}</msg>
+<msg time="2024-04-28T12:28:36.898827" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\QAx\\projects\\parodify-robot\\logs\\browser\\traces\\20601b08-d134-4c34-99cc-d281ff30d822"}</msg>
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-04-28T12:28:36.450397" elapsed="0.448430"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-04-28T12:28:37.382584" level="INFO">Successfully initialized new page object and opened url: about:black</msg>
+<msg time="2024-04-28T12:28:37.382584" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>about:black</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-04-28T12:28:36.899826" elapsed="0.482758"/>
+</kw>
+<status status="PASS" start="2024-04-28T12:28:36.448397" elapsed="0.934706"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-04-28T12:28:37.384572" level="INFO">${song_name} = Smells Like Test Script</msg>
+<var>${song_name}</var>
+<arg>Smells Like Test Script</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-04-28T12:28:37.383103" elapsed="0.001469"/>
+</kw>
+<kw name="Mock My Song" owner="Browser">
+<msg time="2024-04-28T12:28:37.398747" level="INFO">ok</msg>
+<doc>TODO: Add rfdoc string to exposed function to create documentation</doc>
+<status status="PASS" start="2024-04-28T12:28:37.384572" elapsed="0.015179"/>
+</kw>
+<kw name="Go To" owner="Browser">
+<msg time="2024-04-28T12:28:38.021123" level="INFO">Successfully opened URL https://parodify.vercel.app/</msg>
+<arg>https://parodify.vercel.app/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-04-28T12:28:37.400746" elapsed="0.620377"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-04-28T12:28:38.132401" level="INFO">Text: 'Fernando Papito'</msg>
+<arg>css=.logged-user</arg>
+<arg>contains</arg>
+<arg>Fernando Papito</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-04-28T12:28:38.022647" elapsed="0.109754"/>
+</kw>
+<kw name="Get play button">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-04-28T12:28:38.135329" level="INFO">${play} = xpath=//div[contains(@class, "song")]//h6[text()="Smells Like Test Script"]/..//button[contains(@class, "play")]</msg>
+<var>${play}</var>
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="${song_name}"]/..//button[contains(@class, "play")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-04-28T12:28:38.135329" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${play}</value>
+<status status="PASS" start="2024-04-28T12:28:38.135329" elapsed="0.000000"/>
+</return>
+<msg time="2024-04-28T12:28:38.135329" level="INFO">${play} = xpath=//div[contains(@class, "song")]//h6[text()="Smells Like Test Script"]/..//button[contains(@class, "play")]</msg>
+<var>${play}</var>
+<arg>Smells Like Test Script</arg>
+<status status="PASS" start="2024-04-28T12:28:38.134520" elapsed="0.000809"/>
+</kw>
+<kw name="Get pause button">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-04-28T12:28:38.137608" level="INFO">${pause} = xpath=//div[contains(@class, "song")]//h6[text()="Smells Like Test Script"]/..//button[contains(@class, "pause")]</msg>
+<var>${pause}</var>
+<arg>xpath=//div[contains(@class, "song")]//h6[text()="${song_name}"]/..//button[contains(@class, "pause")]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-04-28T12:28:38.136607" elapsed="0.001001"/>
+</kw>
+<return>
+<value>${pause}</value>
+<status status="PASS" start="2024-04-28T12:28:38.137608" elapsed="0.000000"/>
+</return>
+<msg time="2024-04-28T12:28:38.137608" level="INFO">${pause} = xpath=//div[contains(@class, "song")]//h6[text()="Smells Like Test Script"]/..//button[contains(@class, "pause")]</msg>
+<var>${pause}</var>
+<arg>Smells Like Test Script</arg>
+<status status="PASS" start="2024-04-28T12:28:38.136607" elapsed="0.001001"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-04-28T12:28:38.138608" level="INFO">Clicks the element 'xpath=//div[contains(@class, "song")]//h6[text()="Smells Like Test Script"]/..//button[contains(@class, "play")]'.</msg>
+<arg>${play}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-04-28T12:28:38.138608" elapsed="0.094569"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-04-28T12:28:38.457335" level="INFO">Waited for Element with selector xpath=//div[contains(@class, "song")]//h6[text()="Smells Like Test Script"]/..//button[contains(@class, "pause")] at state visible</msg>
+<arg>${pause}</arg>
+<arg>visible</arg>
+<arg>2</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-04-28T12:28:38.233177" elapsed="0.224158"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-04-28T12:28:43.432236" level="INFO">Waited for Element with selector xpath=//div[contains(@class, "song")]//h6[text()="Smells Like Test Script"]/..//button[contains(@class, "play")] at state visible</msg>
+<arg>${play}</arg>
+<arg>visible</arg>
+<arg>7</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-04-28T12:28:38.458676" elapsed="4.974097"/>
+</kw>
+<kw name="Finish session" type="TEARDOWN">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2024-04-28T12:28:43.825037" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2024-04-28T12:28:43.435359" elapsed="0.390341"/>
+</kw>
+<status status="PASS" start="2024-04-28T12:28:43.434360" elapsed="0.391340"/>
+</kw>
+<status status="PASS" start="2024-04-28T12:28:36.442586" elapsed="7.383114"/>
+</test>
+<status status="PASS" start="2024-04-28T12:28:34.140673" elapsed="9.865107"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Player">Player</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
